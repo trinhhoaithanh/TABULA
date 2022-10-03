@@ -1,10 +1,16 @@
 //color 
 $text-c1-purple: #BC3D8F;
+
+//fontsize
+$fs-1:16px;
+$fs-5:50px;
+
 .header{
     background-image: url(../../img/yellow_top_wave_01.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     .container{
-    margin: auto;
-    width: 80%;
         .menu{
             .navbar{
                 .navbar-brand{
@@ -34,11 +40,15 @@ $text-c1-purple: #BC3D8F;
 .carousel{
     .container{
         .row{
+            align-items: center;
             .col-6{
                 h3{
                     color: $text-c1-purple;
+                    font-size: $fs-1;
                 }
-                h1{}
+                h1{
+                    font-size: $fs-5;
+                }
             }
             .col-6{
                 img{
@@ -46,5 +56,10 @@ $text-c1-purple: #BC3D8F;
                 }
             }
         }
+    }
+}
+.staff{
+    .container{
+
     }
 }
