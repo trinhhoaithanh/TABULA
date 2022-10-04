@@ -1,36 +1,87 @@
 //color 
 $text-c1-purple: #BC3D8F;
+$text-c1-black: black;
 
 //fontsize
-$fs-1:16px;
-$fs-5:50px;
 
+$fs-1:10px;
+$fs-3:16px;
+$fs-2:20px;
+$fs-5:50px;
+//font-weight
+$fw-light:300;
+$fw-regular:600;
+$fw-semi:700;
+$fw-bold:900;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
 .header{
     background-image: url(../../img/yellow_top_wave_01.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     .container{
         .menu{
             .navbar{
-                .navbar-brand{
-                    img{
-                    
-                    }
-                }
-                .collapse{
-                    .navbar-nav{
-                        .nav-item{
-                            a{
-
-                            }
+                .container-fluid{
+                    .navbar-brand{
+                        img{
+                                width: 100%;
                         }
                     }
-                    .header-btn{
-
+                    .navbar-toggler{
+                        .navbar-toggler-icon{
+                            
+                        }
                     }
-                    .icon{
+                    .collapse{
+                        justify-content: flex-end;
+                        .navbar-nav{
+                            .nav-item{
+                                margin-right: 30px;
+                                .nav-link{
+                                    color: $text-c1-black;
+                                    font-weight:$fw-light;
+                                    font-size: $fs-3;
+                                }
+                            }
+                            
+                        }
+                        .header-btn{
+                            button{
+                                border-radius: $fs-2;
+                                padding: $fs-1 $fs-2;
+                                margin-right: $fs-2;
+                                background-color: $text-c1-purple;
+                                border: 1px solid $text-c1-purple;
+                                &:hover{
+                                    color: $text-c1-purple;
+                                    background-color: transparent;
+                                    border: 1px solid $text-c1-purple;
+                                }
+                                i{
 
+                                }
+                                span{
+    
+                                }
+                            }
+                            
+                        }
+                        .icon{
+                            i{
+                                    margin-left: $fs-1;
+                                    font-size: $fs-3;
+                                    &:hover{
+                                        color:#BC3D8F;
+                                    }
+                            }
+                        }
                     }
                 }
             }
@@ -38,16 +89,18 @@ $fs-5:50px;
     }
 }
 .carousel{
+    
     .container{
         .row{
             align-items: center;
             .col-6{
                 h3{
                     color: $text-c1-purple;
-                    font-size: $fs-1;
+                    font-size: $fs-3;
+                    
                 }
                 h1{
-                    font-size: $fs-5;
+                    font-size: $fs-1;
                 }
             }
             .col-6{
@@ -59,7 +112,27 @@ $fs-5:50px;
     }
 }
 .staff{
+    background-image: url(../img/Violet_top_left_wave.png);
     .container{
+        .row{
+            justify-content: space-between;
+            .card{
+                img{
+                    width: 100%;
+                }
+                .card-body{
+                    .card-title{
+                        color: #BC3D8F ;
+                    }
+                    h3{
 
+                    }
+                    .card-text{
+
+                    }
+                }
+
+            }
+        }
     }
 }
