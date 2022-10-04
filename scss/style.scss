@@ -5,6 +5,7 @@ $text-c1-black: black;
 //fontsize
 
 $fs-1:10px;
+$fs-4:14px;
 $fs-3:16px;
 $fs-2:20px;
 $fs-5:50px;
@@ -47,7 +48,10 @@ $fw-bold:900;
                                 .nav-link{
                                     color: $text-c1-black;
                                     font-weight:$fw-light;
-                                    font-size: $fs-3;
+                                    font-size: $fs-4;
+                                    &:hover{
+                                        color: $text-c1-purple;
+                                    }
                                 }
                             }
                             
@@ -97,10 +101,11 @@ $fw-bold:900;
                 h3{
                     color: $text-c1-purple;
                     font-size: $fs-3;
-                    
+
                 }
                 h1{
-                    font-size: $fs-1;
+                    font-size: $fs-5;
+                    font-weight: $fw-semi;
                 }
             }
             .col-6{
@@ -113,19 +118,39 @@ $fw-bold:900;
 }
 .staff{
     background-image: url(../img/Violet_top_left_wave.png);
+    background-size: cover;
+    background-repeat:no-repeat;
     .container{
         .row{
             justify-content: space-between;
+           
             .card{
+                &:hover{
+                    box-shadow: 1px 9px 5px 0px rgba(0,0,0,0.17);
+                    -webkit-box-shadow: 1px 9px 5px 0px rgba(0,0,0,0.17);
+                    -moz-box-shadow: 1px 9px 5px 0px rgba(0,0,0,0.17);
+                    transition: all 0.5s;
+                    img{
+                        transform: scale(1.1);
+                        transition: all 1s;
+                    }
+                }
+                margin-bottom: $fs-5;
+                padding-left: 0;
+                padding-right: 0;
+                overflow: hidden;
                 img{
                     width: 100%;
                 }
                 .card-body{
+                    text-align: center;
                     .card-title{
-                        color: #BC3D8F ;
+                        color: #BC3D8F;
+                        font-size: $fs-1;
+                        
                     }
                     h3{
-
+                        font-weight: $fw-semi;
                     }
                     .card-text{
 

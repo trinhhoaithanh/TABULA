@@ -24,7 +24,10 @@
 .header .container .menu .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: black;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
+}
+.header .container .menu .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #BC3D8F;
 }
 .header .container .menu .navbar .container-fluid .collapse .header-btn button {
   border-radius: 20px;
@@ -54,7 +57,8 @@
   font-size: 16px;
 }
 .carousel .container .row .col-6 h1 {
-  font-size: 10px;
+  font-size: 50px;
+  font-weight: 700;
 }
 .carousel .container .row .col-6 img {
   width: 100%;
@@ -62,13 +66,38 @@
 
 .staff {
   background-image: url(../img/Violet_top_left_wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .staff .container .row {
   justify-content: space-between;
 }
+.staff .container .row .card {
+  margin-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+.staff .container .row .card:hover {
+  box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.17);
+  transition: all 0.5s;
+}
+.staff .container .row .card:hover img {
+  transform: scale(1.1);
+  transition: all 1s;
+}
 .staff .container .row .card img {
   width: 100%;
 }
+.staff .container .row .card .card-body {
+  text-align: center;
+}
 .staff .container .row .card .card-body .card-title {
   color: #BC3D8F;
+  font-size: 10px;
+}
+.staff .container .row .card .card-body h3 {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
