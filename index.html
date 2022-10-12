@@ -161,30 +161,65 @@
   <section class="course">
     <div class="container">
       <div class="row">
-        <div class="thumbnail">
-          <img src="./img/conatct_inner.png" alt="">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="thumbnail">
+            <img src="./img/conatct_inner.png" alt="">
+          </div>
         </div>
-        <div class="form">
-          <div class="form-title">
-            <h1>Find Your Course</h1>
-            <div class="form-body">
-              <div class="row">
-                <div class="col-6">
-                  <i class="fa fa-user"></i>
-                  <input type="text" placeholder="Name">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="form  ">
+            <div class="form-title">
+              <h1>Find Your Course</h1>
+              <div class="form-body">
+                <div class="row form-contact">
+                  <div class="col-6 contactRow w-50">
+                    <i class="fa fa-user"></i>
+                    <input class="form-control w-50" type="text" placeholder="Name">
+                  </div>
+                  <div class="col-6 contactRow ">
+                    <i class="fa fa-envelope"></i>
+                    <input class="form-control w-50" type="text" placeholder="Email">
+                  
+                  </div>
+                  <div class="col-12 contactRow">
+                    <div class="contactList">
+                      <span class="fa fa-graduation-cap"></span>
+                    </div>
+                      <div class="fancy-select">
+                        <select name="course-list" class="form-control ">
+                          <option class="selected" value="English">English</option>
+                          <option value="French">French</option>
+                          <option value="Spanish">Spanish</option>
+                          <option value="German">German</option>
+                        </select>
+                        <!-- <div class="trigger">
+                            English
+                        </div>
+                        <ul class="options">
+                          <li data-raw-value="English" class="selected">English</li>
+                          <li data-raw-value="French" class="">French</li>
+                          <li data-raw-value="Spanish" class="">Spanish</li>
+                          <li data-raw-value="German" class="">German</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                    <div class="col-12 contactRow">
+                      <span class="fab fa-facebook-messenger"></span>
+                      <span class="form-control " data-name="your-message">
+                        <textarea name="your-message"  cols="40" rows="10" placeholder="Message"> </textarea>
+                      </span>
+                    </div>
+                  </div>  
                 </div>
-                <div class="col-6">
-                  <i class="fa fa-envelope"></i>
-                  <input type="text" placeholder="Email">
-                
-                </div>  
               </div>
-            </div>
-            <div class="form-btn">
-              <button class="btn btn-primary">SEND</button>
+              <div class="form-btn">
+                <button class="btn btn-primary">SEND</button>
+              </div>
             </div>
           </div>
         </div>
+        
+        
       </div>
     </div>
   </section>

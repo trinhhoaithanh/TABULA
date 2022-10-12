@@ -6,11 +6,11 @@
 }
 
 .header {
-  background-image: url(../../img/yellow_top_wave_01.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  background-color: transparent;
+  z-index: 10;
 }
 .header .container .menu .navbar .container-fluid .navbar-brand img {
   width: 100%;
@@ -49,6 +49,14 @@
   color: #BC3D8F;
 }
 
+.carousel {
+  background-image: url(../../img/yellow_top_wave_01.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
 .carousel .container .row {
   align-items: center;
 }
@@ -73,6 +81,8 @@
   justify-content: space-between;
 }
 .staff .container .row .card {
+  padding: 0;
+  border: none;
   margin-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
