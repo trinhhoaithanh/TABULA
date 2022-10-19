@@ -111,6 +111,54 @@
 .staff .container .row .card .card-body h3 {
   font-weight: 700;
 }
+.course {
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.course .container {
+  padding: 50px 0;
+}
+.course .container .row .thumbnail img {
+  max-width: 100%;
+}
+.course .container .row .form .form-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.course .container .row .form .form-body .form-contact .contactRow {
+  position: relative;
+}
+.course .container .row .form .form-body .form-contact .contactRow i {
+  position: absolute;
+  top: 13px;
+  left: 25px;
+  color: #BC3D8F;
+}
+.course .container .row .form .form-body .form-contact .contactRow input {
+  padding: 8px 35px;
+}
+.course .container .row .form .form-body .form-contact .contactRow .fancy-select select {
+  padding: 8px 35px;
+}
+.course .container .row .form .form-body .form-contact .contactRow span {
+  color: #BC3D8F;
+}
+.course .container .row .form .form-body .form-contact .contactRow textarea {
+  padding: 8px 35px;
+}
+.course .container .row .form .form-btn button {
+  border-radius: 50px;
+  background-color: #BC3D8F;
+  padding: 10px 50px;
+  border: 1px solid transparent;
+}
+.course .container .row .form .form-btn button:hover {
+  background-color: transparent;
+  border: 1px solid #BC3D8F;
+  color: #BC3D8F;
+}
+
 .footer {
   background-image: url(../img/footer_background.jpg);
   background-repeat: no-repeat;
@@ -121,7 +169,7 @@
 .footer .container {
   color: white;
   font-size: 14px;
-  padding: 50px;
+  padding: 50px 0;
 }
 .footer .container .row .footer-title {
   margin-bottom: 15px;
@@ -153,15 +201,23 @@
   border-radius: 50px;
   background-color: transparent;
   margin-bottom: 10px;
+  width: 59%;
+}
+.footer .container .row .form-footer ::placeholder {
+  color: white;
 }
 .footer .container .row .form-footer button {
   color: black;
   background-color: white;
   border: 1px solid transparent;
   border-radius: 50px;
+  padding: 10px 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .footer .container .row .form-footer button:hover {
-  background-color: #BC3D8F;
+  background-color: #AA017E;
   color: white;
   border: 1px solid white;
   border-radius: 50px;

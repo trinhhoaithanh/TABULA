@@ -129,6 +129,7 @@ $fw-bold:900;
     background-image: url(../img/Violet_top_left_wave.png);
     background-size: cover;
     background-repeat:no-repeat;
+    
     .container{
         
         .row{
@@ -173,7 +174,83 @@ $fw-bold:900;
         }
     }
 }
+// COURSE
+.course{
+    background-image: url(../img/accent_bottom_wave_01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+   
+    
+    .container{
+        padding: 50px 0;
+        .row{
+            .thumbnail{
+                img{
+                    
+                    max-width: 100%;
+                    
+                }
+            }
+            .form{
+                .form-title{
+                    h1{
+                        
+                        font-size:$fs-5;
+                        font-weight: $fw-semi;
+                    }
+                }
+                .form-body{
+                    .form-contact{
+                        .contactRow{
+                            position: relative;
+                            // padding:8px 35px;
+                            i{
+                                position: absolute;
+                                top: 13px;
+                                left: 25px;
+                                color:$text-c1-purple;
+                            }
+                            input{
+                                padding:8px 35px;
+                            }                              
+                            .contactList{
 
+                            }
+                            .fancy-select{
+                                select{
+                                    padding:8px 35px;
+                                    option{
+                                        
+                                    }
+                                }
+                            }
+                            span{
+                                color:$text-c1-purple;
+                            }
+                            textarea{
+                                padding:8px 35px;
+                            }
+                        }
+                    }
+                }
+                .form-btn{
+                    button{
+                        border-radius: 50px;
+                        background-color: $text-c1-purple;
+                        padding: 10px 50px;
+                        border: 1px solid transparent;
+                        &:hover{
+                            background-color: transparent;
+                            border: 1px solid $text-c1-purple;
+                            color: $text-c1-purple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// FOOTER 
 .footer{
     background-image: url(../img/footer_background.jpg);
     background-repeat: no-repeat;
@@ -183,7 +260,7 @@ $fw-bold:900;
     .container{
         color: $text-c1-white;
         font-size: 14px;
-        padding: 50px;
+        padding: 50px 0;
         .row{
             .footer-title{
                 margin-bottom: 15px;
@@ -222,14 +299,22 @@ $fw-bold:900;
                     border-radius: 50px;
                     background-color: transparent;
                     margin-bottom: 10px;
+                    width: 59%;
+                }
+                ::placeholder{
+                    color: $text-c1-white;
                 }
                 button{
                     color: $text-c1-black;
                     background-color: $text-c1-white ;
                     border: 1px solid transparent;
                     border-radius: 50px;
+                    padding: 10px 50px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
                     &:hover{
-                        background-color: #BC3D8F;
+                        background-color:#AA017E;
                         color:$text-c1-white ;
                         border: 1px solid $text-c1-white;
                         border-radius: 50px;
@@ -239,3 +324,4 @@ $fw-bold:900;
         }
     }
 }
+
