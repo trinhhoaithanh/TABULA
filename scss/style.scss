@@ -1,7 +1,7 @@
 //color 
 $text-c1-purple: #BC3D8F;
 $text-c1-black: black;
-
+$text-c1-white:white;
 //fontsize
 
 $fs-1:10px;
@@ -130,6 +130,7 @@ $fw-bold:900;
     background-size: cover;
     background-repeat:no-repeat;
     .container{
+        
         .row{
             justify-content: space-between;
            
@@ -168,6 +169,72 @@ $fw-bold:900;
                     }
                 }
 
+            }
+        }
+    }
+}
+
+.footer{
+    background-image: url(../img/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    height: 500px;
+    .container{
+        color: $text-c1-white;
+        font-size: 14px;
+        padding: 50px;
+        .row{
+            .footer-title{
+                margin-bottom: 15px;
+                h3{
+                    
+                }
+            }
+            ul{
+                margin-left: 0px !important;
+                li{
+                    list-style: none;
+                    margin-bottom: 15px;
+                    span{
+
+                    }
+                    p{
+                        display: inline-block;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $text-c1-white;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                    i{
+                        &:hover{
+                            color: $text-c1-black;
+                        }
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .form-footer{
+                input{
+                    border-radius: 50px;
+                    background-color: transparent;
+                    margin-bottom: 10px;
+                }
+                button{
+                    color: $text-c1-black;
+                    background-color: $text-c1-white ;
+                    border: 1px solid transparent;
+                    border-radius: 50px;
+                    &:hover{
+                        background-color: #BC3D8F;
+                        color:$text-c1-white ;
+                        border: 1px solid $text-c1-white;
+                        border-radius: 50px;
+                    }
+                }
             }
         }
     }

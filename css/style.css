@@ -110,4 +110,59 @@
 }
 .staff .container .row .card .card-body h3 {
   font-weight: 700;
+}
+.footer {
+  background-image: url(../img/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.footer .container {
+  color: white;
+  font-size: 14px;
+  padding: 50px;
+}
+.footer .container .row .footer-title {
+  margin-bottom: 15px;
+}
+.footer .container .row ul {
+  margin-left: 0px !important;
+}
+.footer .container .row ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer .container .row ul li p {
+  display: inline-block;
+}
+.footer .container .row ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer .container .row ul li a:hover {
+  opacity: 0.8;
+}
+.footer .container .row ul li i {
+  margin-left: 10px;
+}
+.footer .container .row ul li i:hover {
+  color: black;
+}
+.footer .container .row .form-footer input {
+  border-radius: 50px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.footer .container .row .form-footer button {
+  color: black;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+.footer .container .row .form-footer button:hover {
+  background-color: #BC3D8F;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
